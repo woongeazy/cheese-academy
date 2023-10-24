@@ -20,21 +20,69 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="header">
-      <div class="logo"></div>
-      <div class="login_nav">
-        <div class="login"></div>
-        <div class="nav"></div>
+    <div class="header header-bg">
+      <div class="d-flex container margin-auto justify-between align-center">
+          <div class="logo">
+            <img src="images/logo.png" alt="logo">
+          </div>
+          <div class="login_nav">
+            <div class="login d-flex">
+                <p>로그인</p>
+                <p>회원가입</p>
+                <a href="#"><img src="images/select.png" alt="검색"></a>
+            </div>
+            <div class="nav nav-bg">
+              <ul id="gnb" class="d-flex">
+                <li><a href="#">치즈</a>
+                  <ul class="lnb">
+                    <li><a href="#">원산지</a></li>
+                    <li><a href="#">치즈 이야기</a></li>
+                    <li><a href="#">치즈 즐기는 법</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">공지사항</a>
+                  <ul class="lnb">
+                    <li><a href="#">이벤트 전체</a></li>
+                    <li><a href="#">진행 이벤트</a></li>
+                    <li><a href="#">상시 이벤트</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">메뉴</a>
+                  <ul class="lnb">
+                    <li><a href="#">신제품</a></li>
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">추천상품</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">샵</a>
+                  <ul class="lnb">
+                    <li><a href="#">가맹점 문의</a></li>
+                    <li><a href="#">매장 찾기</a></li>
+                    <li><a href="#">예약 룸 카페</a></li>
+                    <li><a href="#">굿즈 스토원</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">리워드</a>
+                  <ul class="lnb">
+                    <li><a href="#">리워드 소개</a></li>
+                    <li><a href="#">맴버쉽 등급</a></li>
+                    <li><a href="#">자주하는 질문</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
       </div>
     </div>
-    <div class="carousel"></div>
-    <div class="second_nav">
-      <div class="news">
+    <div class="carousel">
+    </div>
+    <div class="second_nav d-flex justify-between container margin-auto">
+      <div class="news d-flex bg-b font-w">
         <h1>공지사항</h1>
         <p>공지사항 내용 입니다.</p>
         <i class="fa-solid fa-plus"></i>
       </div>
-      <select name="promotion" id="promotion" title="promotion">
+      <select name="promotion" id="promotion" class="bg-w" title="promotion">
         <option value="promotion">프로모션</option>
         <option value="promotion">프로모션1</option>
         <option value="promotion">프로모션2</option>
@@ -42,7 +90,9 @@
       </select>
     </div>
     <div class="banner">
-      <div class="banner_logo"></div>
+      <div class="banner_logo">
+        <img src="images/banner_bg.png" alt="베너로고">
+      </div>
       <div class="promotion_login">
         <h2>치즈 아카데미만의 특별한 혜택</h2>
         <p>
@@ -78,21 +128,21 @@
             <h3>이탈리아 자연산 고급치즈 셋트</h3>
             <span>#자연산 #이탈리아 #고급치즈</span>
             <p>19,900원</p>
-            <span>30,000원</span>
+            <p>30,000원</p>
           </div>
           <div class="item">
             <img src="images/cheese1.png" alt="까망베르" />
             <h3>이탈리아 자연산 고급치즈 셋트</h3>
             <span>#자연산 #이탈리아 #고급치즈</span>
             <p>19,900원</p>
-            <span>30,000원</span>
+            <p>30,000원</p>
           </div>
           <div class="item">
             <img src="images/cheese1.png" alt="까망베르" />
             <h3>이탈리아 자연산 고급치즈 셋트</h3>
             <span>#자연산 #이탈리아 #고급치즈</span>
             <p>19,900원</p>
-            <span>30,000원</span>
+            <p>30,000원</p>
           </div>
         </div>
         <div class="items2">
@@ -101,21 +151,21 @@
             <h3>이탈리아 자연산 고급치즈 셋트</h3>
             <span>#자연산 #이탈리아 #고급치즈</span>
             <p>19,900원</p>
-            <span>30,000원</span>
+            <p>30,000원</p>
           </div>
           <div class="item">
             <img src="images/cheese1.png" alt="까망베르" />
             <h3>이탈리아 자연산 고급치즈 셋트</h3>
             <span>#자연산 #이탈리아 #고급치즈</span>
             <p>19,900원</p>
-            <span>30,000원</span>
+            <p>30,000원</p>
           </div>
           <div class="item">
             <img src="images/cheese1.png" alt="까망베르" />
             <h3>이탈리아 자연산 고급치즈 셋트</h3>
             <span>#자연산 #이탈리아 #고급치즈</span>
             <p>19,900원</p>
-            <span>30,000원</span>
+            <p>30,000원</p>
           </div>
         </div>
       </div>
@@ -129,8 +179,82 @@
       </p>
     </div>
     <div class="meal_kit">
-      <h2>집에서도 간편하게<br />매장 느낌!</h2>
-      <p>집에서도 간편하게<br />준비할수 있는 셋업!</p>
+      <div class="meal_kit_title">
+        <div class="meal_kit_text">
+          <h2>집에서도 간편하게<br />매장 느낌!</h2>
+          <p>집에서도 간편하게<br />준비할수 있는 셋업!</p>
+        </div>
+        <img src="images/store1.png" alt="매장 복도" />
+        <div class="store_photo">
+          <img src="images/store2.png" alt="매장 테이블" />
+          <div class="store_cheese">
+            <img src="images/store_cheese1.png" alt="매장 치즈사진" />
+            <img src="images/store_cheese2.png" alt="매장 도마위 치즈사진" />
+          </div>
+        </div>
+      </div>
+      <div class="meal_kit_items">
+        <div class="meal_kit_item">
+          <img src="images/meal_kit1.png" alt="치즈 밀키트1" />
+          <h3>브라운 & 체다 치즈 세트</h3>
+          <p>87,000원</p>
+          <p>160,000원</p>
+        </div>
+        <div class="meal_kit_item">
+          <img src="images/meal_kit2.png" alt="치즈 밀키트2" />
+          <h3>브라운 & 체다 치즈 세트</h3>
+          <p>87,000원</p>
+          <p>160,000원</p>
+        </div>
+        <div class="meal_kit_item">
+          <img src="images/meal_kit3.png" alt="치즈 밀키트3" />
+          <h3>브라운 & 체다 치즈 세트</h3>
+          <p>87,000원</p>
+          <p>160,000원</p>
+        </div>
+      </div>
+      <button>더보기+</button>
+    </div>
+    <div class="review">
+      <h1>리뷰</h1>
+      <div class="review_items">
+        <div class="reiew_item">
+          <img src="images/review1.png" alt="리뷰목록" />
+          <div class="reiew_text">
+            <h3>치즈 세트</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Nisl viverra</p>
+          </div>
+        </div>
+        <div class="reiew_item">
+          <img src="images/review1.png" alt="리뷰목록" />
+          <div class="reiew_text">
+            <h3>치즈 세트</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Nisl viverra</p>
+          </div>
+        </div>
+        <div class="reiew_item">
+          <img src="images/review1.png" alt="리뷰목록" />
+          <div class="reiew_text">
+            <h3>치즈 세트</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Nisl viverra</p>
+          </div>
+        </div>
+        <div class="reiew_item">
+          <img src="images/review1.png" alt="리뷰목록" />
+          <div class="reiew_text">
+            <h3>치즈 세트</h3>
+            <p>Lorem ipsum dolor sit amet consectetur. Nisl viverra</p>
+          </div>
+        </div>
+      </div>
+      <button>더보기+</button>
+    </div>
+    <div class="footer">
+      <p>
+        개인정보처리방침 | 영상정보처리기기 운용관리 방침 | 홈페이지 이용 약관 |
+        위치정보 이용약관 | 맴버쉽 카드 이용약관 | 비회원 이용약관
+      </p>
+      <p class="copyright">copyright&copy; hancheawoong. 2023 all rights reserved.</p>
     </div>
     <script src="js/main.js"></script>
   </body>

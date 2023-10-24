@@ -1,7 +1,89 @@
 @charset "utf-8";
-
+:root {
+    --primary-color: #FFCD83;
+    --secondary-color: #D77B38;
+    --nav-color: #FFEFCB;
+    --font-color: #333;
+    --bg-color: #fff;
+}
 body {
     font-family: "Noto Sans KR", "sans-self";
     color: #333;
-    background: #fff;
+    background: var(--primary-color);
 }
+/* ------------------------------------------------공용 */
+.nav-bg {
+    background: var(--nav-color);
+}
+.header-bg {
+    background: var(--secondary-color);
+}
+.bg-b {
+    background: #000;
+}
+.bg-w {
+    background: var(--bg-color);
+}
+.font-w {
+    color: var(--bg-color);
+}
+.bg-w {
+    background: var(--bg-color);
+}
+
+.d-flex {
+    display: flex;
+}
+.d-none {
+    display: none;
+}
+.container {
+    width: 1440px;
+}
+.margin-auto {
+    margin: 0 auto;
+}
+.justify-between {
+    justify-content: space-between
+}
+.justify-center {
+    justify-content: center;
+}
+.text-align {
+    text-align: center;
+}
+.align-center {
+    align-items: center;
+}
+/*---------------------------------------------- header */
+/*---------------------------------------------- login_nav */
+/*---------------------------------------------- nav */
+.lnb {
+    display: none;
+}
+/*---------------------------------------------- carousel */
+.carousel {
+    width: 100%;
+    height: 800px;
+    background: url(../images/c-bg.png) no-repeat center;
+}
+/*---------------------------------------------- second_nav */
+/*---------------------------------------------- news */
+/*---------------------------------------------- banner */
+/*---------------------------------------------- membership */
+/*---------------------------------------------- contents */
+/*---------------------------------------------- contents_left */
+/*---------------------------------------------- contents_items */
+/*---------------------------------------------- second_banner */
+/*---------------------------------------------- meal_kit */
+/*---------------------------------------------- meal_kit_title */
+/*---------------------------------------------- meal_kit_text */
+/*---------------------------------------------- store_cheese */
+/*---------------------------------------------- meal_kit_items */
+/*---------------------------------------------- meal_kit_item */
+/*---------------------------------------------- review */
+/*---------------------------------------------- review_items */
+/*---------------------------------------------- reiew_item */
+/*---------------------------------------------- reiew_text */
+/*---------------------------------------------- footer */
+/*---------------------------------------------- copyright */
