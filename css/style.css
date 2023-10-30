@@ -179,6 +179,58 @@ body {
     display: none;
 }
 /*---------------------------------------------- banner */
+.banner_bg {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    line-height: 1.5;
+}
+.promotion_login {
+    width: 1100px;
+}
+.promotion_login {
+    border-bottom: 1px solid var(--bg-color);
+    padding: 0 0 1rem 0;
+}
+.promotion_login button {
+    border: 1px solid var(--bg-color);
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    width: 155px;
+    height: 55px;
+}
+.promotion_login button:nth-child(1) {
+    background: #000;
+}
+.promotion_login button:nth-child(2) {
+    background: none;
+}
+.promotion_login_btn {
+    position: absolute;
+    top: 30%;
+    right: 0;
+}
+.promotion_login_text h2 {
+    font-size: 2.5rem;
+}
+.promotion_login_text p {
+    font-size: 1.5rem;
+}
+.promotion_login_text strong {
+    font-weight: bold;
+}
+.membership {
+    margin: 1rem 0;
+}
+.membership button {
+    width: 280px;
+    height: 55px;
+    border: 1px solid var(--bg-color);
+    border-radius: 10px;
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    background: none;
+}
 /*---------------------------------------------- membership */
 /*---------------------------------------------- contents */
 /*---------------------------------------------- contents_left */
