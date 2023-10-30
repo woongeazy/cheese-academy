@@ -4,6 +4,7 @@
     --secondary-color: #D77B38;
     --nav-color: #FFEFCB;
     --font-color: #333;
+    --subfont-color: #797979;
     --bg-color: #fff;
 }
 body {
@@ -231,8 +232,65 @@ body {
     font-size: 1.5rem;
     background: none;
 }
-/*---------------------------------------------- membership */
 /*---------------------------------------------- contents */
+.contents_bg {
+    background: url(../images/contents_bg.png) no-repeat left ;
+    background-position: 0% 100%;
+}
+.contents {
+    height: 1300px;
+}
+.contents_left {
+    width: 270px;
+}
+.contents_left h1 {
+    font-size: 4rem;
+    white-space: nowrap;
+}
+.contents_left_tab {
+    margin: 15rem 0 0 0;
+}
+.contents_left p {
+    border-radius: 100px;
+    width: 135px;
+    font-size: 1.5rem;
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    text-align: center;
+    margin: 2rem 0;
+    padding: .5rem 0;
+}
+.contents_left h1::after {
+    content: '';
+    display: block;
+    width: 130px;
+    padding: 0 0 3rem 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+.contents_items {
+    width: 1050px;
+}
+.item img {
+    margin: 0 0 1rem 0;
+}
+.contents_items h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 0 .5rem 0;
+}
+.contents_items span {
+    font-size: 1.25rem;
+    color: var(--font-color);
+}
+.wen {
+    display: flex;
+    font-size: 1.5rem;
+}
+.wen p:nth-child(2) {
+    text-decoration: line-through;
+    color: var(--subfont-color);
+    margin: 0 0 0 1rem;
+}
 /*---------------------------------------------- contents_left */
 /*---------------------------------------------- contents_items */
 /*---------------------------------------------- second_banner */
