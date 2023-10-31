@@ -241,7 +241,7 @@ body {
 /*---------------------------------------------- contents */
 .contents_bg {
   background: url(../images/contents_bg.png) no-repeat left;
-  background-position: 0% 100%;
+  background-position: 0% 120%;
 }
 .contents {
   height: 1300px;
