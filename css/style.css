@@ -6,6 +6,7 @@
     --font-color: #333;
     --subfont-color: #797979;
     --bg-color: #fff;
+    --event-color: #db4343;
 }
 body {
     font-family: "Noto Sans KR", "sans-self";
@@ -287,10 +288,15 @@ body {
     color: var(--font-color);
 }
 .wen {
+    margin: 1rem 0 0 0;
     display: flex;
     font-size: 1.5rem;
 }
-.wen p:nth-child(2) {
+
+.wen p:nth-child(1) {
+    color: var(--event-color);
+}
+.wen p:nth-child(3) {
     text-decoration: line-through;
     color: var(--subfont-color);
     margin: 0 0 0 1rem;
@@ -303,9 +309,9 @@ body {
     background: var(--secondary-color);
     height: 18rem;
     color: var(--bg-color);
-    position: absolute;
+    /* position: absolute;
     width: 100vw;
-    top: -15%;
+    top: -15%; */
 }
 .second_banner {
     height: 100%;
@@ -325,7 +331,64 @@ body {
     right: -20%;
 }
 /*---------------------------------------------- meal_kit */
-
+.meal_kit_margin {
+    margin: 8rem 0 0 0;
+}
+.meal_kit_text h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+.meal_kit_text h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    padding: 0 0 10rem 0;
+    border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+}
+.meal_kit_text p {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 3rem 0;
+}
+.store_imgs {
+    vertical-align: top;
+    width: 877px;
+    height: 750px;
+    overflow: hidden;
+    position: relative;
+}
+.meal_kit_item h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.store_imgs img:nth-child(1) {
+    margin: 0 33px 0 0
+}
+.store_photo img:nth-child(1) {
+    margin: 0 0 33px 0;
+}
+.store_cheese img:nth-child(1) {
+    margin: 0 33px 0 0;
+}
+.store_cheese img:nth-child(2) {
+    position: absolute;
+}
+.set_btn {
+    width: 100%;
+}
+.set_btn button {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.set_btn button:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--bg-color);
+}
 /*---------------------------------------------- meal_kit_title */
 /*---------------------------------------------- meal_kit_text */
 /*---------------------------------------------- store_cheese */
