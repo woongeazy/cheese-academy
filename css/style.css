@@ -32,6 +32,9 @@ body {
 .pos-r {
     position: relative;
 }
+.pos-a {
+    position: absolute;
+}
 .d-flex {
     display: flex;
 }
@@ -184,6 +187,7 @@ body {
     background: var(--secondary-color);
     color: var(--bg-color);
     line-height: 1.5;
+    padding: 1.5rem 0;
 }
 .promotion_login {
     width: 1100px;
@@ -291,10 +295,37 @@ body {
     color: var(--subfont-color);
     margin: 0 0 0 1rem;
 }
-/*---------------------------------------------- contents_left */
-/*---------------------------------------------- contents_items */
 /*---------------------------------------------- second_banner */
+/* .s_banner_big {
+    height: 100vh;
+} */
+.s_banner_bg {
+    background: var(--secondary-color);
+    height: 18rem;
+    color: var(--bg-color);
+    position: absolute;
+    width: 100vw;
+    top: -15%;
+}
+.second_banner {
+    height: 100%;
+}
+.s_banner_text h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+}
+.s_banner_text p {
+    font-size: 1.75rem;
+    font-weight: 1;
+}
+.second_banner img {
+    position: absolute;
+    width: 970px;
+    top: -100%;
+    right: -20%;
+}
 /*---------------------------------------------- meal_kit */
+
 /*---------------------------------------------- meal_kit_title */
 /*---------------------------------------------- meal_kit_text */
 /*---------------------------------------------- store_cheese */
