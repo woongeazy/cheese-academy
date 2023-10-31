@@ -379,11 +379,13 @@ body {
 .set_btn button {
     background: var(--secondary-color);
     color: var(--bg-color);
-    border: none;
+    border: 1px solid var(--secondary-color);
     border-radius: 0 0 20px 20px;
     width: 100%;
     font-size: 1.5rem;
     padding: 1rem 0;
+    box-sizing: border-box;
+    transition: all 300ms;
 }
 .set_btn button:hover {
     background: var(--primary-color);
