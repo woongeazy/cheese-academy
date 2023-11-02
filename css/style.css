@@ -8,6 +8,7 @@
   --bg-color: #fff;
   --reniew_color: #cd4628;
   --event-color: #db4343;
+  --footerbg-color: #535353;
 }
 body {
   font-family: "Noto Sans KR", "sans-self";
@@ -482,5 +483,12 @@ body {
     border: 1px solid var(--bg-color);
   }
 /*---------------------------------------------- footer */
-
+.footer {
+  background: var(--footerbg-color);
+  color: var(--bg-color);
+  text-align: center;
+  margin: 3rem 0 0 0;
+  padding: 3rem 0;
+  line-height: 2;
+}
 /*---------------------------------------------- copyright */
