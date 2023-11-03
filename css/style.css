@@ -34,6 +34,9 @@ body {
 .bg-w {
   background: var(--bg-color);
 }
+.text-center {
+  text-align: center;
+}
 .pos-r {
   position: relative;
 }
@@ -620,5 +623,16 @@ body {
 }
 .tab_title ul li:nth-child(1) {
   background: var(--reniew_color);
+  color: var(--bg-color);
+}
+
+/* ========================================================cheese */
+.cheese_bg {
+  background: url(../images/cheese_bg.png) no-repeat center scroll;
+  background-size: cover;
+  height: 730px;
+}
+.cheese_info {
+  text-align: center;
   color: var(--bg-color);
 }
