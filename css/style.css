@@ -163,6 +163,11 @@ body {
   width: 250px;
   box-sizing: border-box;
 }
+#gnb a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 /*---------------------------------------------- carousel */
 .carousel {
   width: 100%;
@@ -207,6 +212,18 @@ body {
 }
 .sub_lnb {
   display: none;
+  z-index: 10;
+}
+.sub_lnb li {
+  width: 550px;
+  background: var(--bg-color);
+}
+.sub_lnb li a {
+  padding: 0 0 0 1rem;
+}
+.lnb > li > a:hover {
+  background: var(--nav-color);
+
 }
 /*---------------------------------------------- banner */
 .banner_bg {

@@ -6,10 +6,28 @@ $(function(){
         $(this).find(".reiew_text").removeClass("on")
     });
 
-    $('.nav_bg').on("mouseover", function(){
-        $(this).addClass("on");
-        $('#gnb').find('> li').css("background", "var(--secondary-color)")
+    $('#gnb > li').on("mouseover", function(){
+        $(".nav_bg").addClass("on");
+        $(this).find("> a").css({
+            background: "var(--secondary-color)",
+            color: "var(--bg-color)"})
         $('.lnb').addClass("on");
-        
     });
+    $('#gnb > li').on("mouseout", function(){
+        $(".nav_bg").removeClass("on");
+        $(this).find("> a").css({
+            background: "none",
+            color: "color: var(--font-color)"})
+        $('.lnb').removeClass("on");
+    })
+    
+    $('.search').on("click", function(){
+        $(".nav_bg").addClass("on")
+    })
+
+    $('.promotion > li > a').on("click", function() {
+        console.log("클릭함");
+        $(".sub_lnb").stop().slideToggle(300)
+    })
+
 })
