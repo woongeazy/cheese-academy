@@ -576,7 +576,7 @@ body {
   color: var(--bg-color);
 }
 .item_btn button:hover {
-  border: 5px solid var(--bg-color);
+  border: 3px solid var(--bg-color);
   color: var(--bg-color);
 }
 .naver {
