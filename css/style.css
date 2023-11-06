@@ -159,7 +159,22 @@ body {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
   /* overflow: hidden; */
 }
+.nav::after {
+  content: '';
+  background: var(--primary-color);
+  width: 100%;
+  height: 0;
+  transition: all 300ms;
+  position: absolute;
+  top: 0%;
+  z-index: 10;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, .3);
+  /* overflow: hidden; */
+}
 .nav_bg.on::after {
+  height: 288px;
+}
+.nav.on::after {
   height: 288px;
 }
 .nav {
@@ -752,4 +767,27 @@ hr {
 .cheese_info {
   line-height: 1.2;
   padding: 3rem 0 0 0;
+}
+
+form {
+  display: none;
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 190%;
+  z-index: 100;
+}
+.select_window {
+  font-size: 1.2rem;
+  padding: 0 0 0 1rem;
+  width: 90%;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid #333;
+}
+.m_search_btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
 }

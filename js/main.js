@@ -22,7 +22,8 @@ $(function(){
     })
     
     $('.search').on("click", function(){
-        $(".nav_bg").addClass("on");
+        $(".nav").addClass("on");
+        $('form').slideDown(300);
     });
 
     $('.promotion > li > a').on("click", function() {
@@ -41,5 +42,4 @@ $(function(){
     $('.category_item').on("mouseleave", function (){
         $(this).find('.ci_text').css("top", "70%")
     });
-    
 })
