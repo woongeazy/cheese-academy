@@ -70,6 +70,9 @@ body {
 .align-center {
   align-items: center;
 }
+.align-end {
+  align-items: end;
+}
 .mt-1 {
   margin: 1rem 0;
 }
@@ -78,6 +81,9 @@ body {
 }
 .mt-3 {
   margin: 3rem 0;
+}
+.mtt-3 {
+  margin: 3rem 0 0 0;
 }
 .my-1 {
   margin: 0 1rem;
@@ -631,12 +637,27 @@ body {
   background: url(../images/cheese_bg.png) no-repeat center scroll;
   background-size: cover;
   height: 730px;
+  position: relative;
 }
 .cheese_info {
   text-align: center;
   color: var(--bg-color);
 }
 /* ====================================cheese_tab */
+.cheese_tabs_bg {
+  border-radius: 100px;
+  overflow: hidden;
+  width: 450px;
+  height: 86px;
+  position: absolute;
+  top: 100%;
+  transform: translate(0, -50%);
+}
+.cheese_tabs {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
 .newnbest_title {
   background: var(--secondary-color);
   color: var(--bg-color);
@@ -644,14 +665,91 @@ body {
   width: 100%;
   height: 100%;
 }
-.cheese_tabs_bg {
-  border-radius: 100px;
-  overflow: hidden;
-  /* padding: 1rem 2rem; */
-  width: 450px;
-  height: 86px;
-}
-.newnbest_title a {
+.newnbest_title li {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+}
+.newnbest_title > .on {
+  background: #d1d1d1;
+  color: var(--font-color);
+  font-weight: bold;
+}
+/* =================================== cheese_container */
+.cheese_container {
+  margin: 8rem 0 0 0;
+}
+.cheese_contents li {
+  text-align: center;
+}
+.cheese_contents img {
+  border-radius: 10px;
+  transition: all 300ms;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .3);
+}
+.cheese_contents img:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .6);
+}
+.cheese_contents li p {
+  padding: 1rem 0;
+}
+hr {
+  border: 1px solid var(--subfont-color);
+  margin: 2rem 0;
+}
+.category_header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.category_header > p {
+  margin: 0 0 0 1rem;
+  color: var(--subfont-color);
+}
+.category_item {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.ci_text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 0;
+  color: var(--bg-color);
+  background: rgba(0, 0, 0, .6);
+  top: 70%;
+  transition: all 300ms;
+}
+.ci_text p:nth-child(1) {
+  margin: 2rem 1rem 1rem 1rem;
+  font-size: 1.5rem;
+}
+.ci_text p:nth-child(2) {
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+.ci_text i {
+  font-size: 3rem;
+  margin: 7rem 0 0 0;
+  padding: .5rem;
+  box-sizing: border-box;
+}
+.cheese_info h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.cheese_info h3 {
+  font-family: 'My Soul', cursive;
+  font-size: 6rem;
+}
+.cheese_info p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cheese_info {
+  line-height: 1.2;
+  padding: 3rem 0 0 0;
 }

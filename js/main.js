@@ -22,12 +22,24 @@ $(function(){
     })
     
     $('.search').on("click", function(){
-        $(".nav_bg").addClass("on")
-    })
+        $(".nav_bg").addClass("on");
+    });
 
     $('.promotion > li > a').on("click", function() {
         console.log("클릭함");
-        $(".sub_lnb").stop().slideToggle(300)
+        $(".sub_lnb").stop().slideToggle(300);
+    });
+
+
+    $('.newnbest_title > li').on('click', function(){
+        $(this).addClass('on').siblings().removeClass();
     })
 
+    $('.category_item').on("mouseenter", function (){
+        $(this).find('.ci_text').css("top", "0%")
+    });
+    $('.category_item').on("mouseleave", function (){
+        $(this).find('.ci_text').css("top", "70%")
+    });
+    
 })
