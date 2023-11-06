@@ -636,3 +636,22 @@ body {
   text-align: center;
   color: var(--bg-color);
 }
+/* ====================================cheese_tab */
+.newnbest_title {
+  background: var(--secondary-color);
+  color: var(--bg-color);
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+}
+.cheese_tabs_bg {
+  border-radius: 100px;
+  overflow: hidden;
+  /* padding: 1rem 2rem; */
+  width: 450px;
+  height: 86px;
+}
+.newnbest_title a {
+  width: 100%;
+  height: 100%;
+}
