@@ -26,7 +26,7 @@ $(function(){
         $('form').slideDown(300);
     });
 
-    $('.promotion > li > a').on("click", function() {
+    $('.promotion > li > p').on("click", function() {
         console.log("클릭함");
         $(".sub_lnb").stop().slideToggle(300);
     });
